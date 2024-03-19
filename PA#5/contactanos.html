@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta y contacto</title>
+    <link rel="icon" type="image/jpg" href="https://motoalternativa.com/wp-content/uploads/Ilustraci%C3%B3n-moto-el%C3%A9ctrica-deportiva.png"/>
+	<title>Formulario de Ventas de Motos</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			background-color: #242430;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+		}
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			background-color: #242424;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		input[type="text"],
+		input[type="email"],
+		select {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 15px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			background-color: #7270ec;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		.btn-vender{
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	
+	<a href="#" class="logo">logo</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu"><img src="images/menu.png" class="menu-icono" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="#">Motos</a></li>
+                    <li><a href="https://www.liferiders.com.co/">Refaccioanes</a></li>
+                    <li><a href="/contactanos.html">Contactanos</a></li>
+                </ul>
+            </nav>
+
+	<h1><center>Formulario de contacto</center></h1>
+	<h6><center>Llene el formulario para obtener la informacion de la motocicleta que quiere br cotizar o averiguar mas sobre ella <br> pronto lo estaremos contactando</center></h6>
+	<br>
+	<form>
+		<label for="nombre">Nombre Completo:</label>
+		<input type="text" id="nombre" name="nombre" required>
+
+		<label for="email">Correo Electrónico:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="modelo">Modelo de Moto:</label>
+		<select id="modelo" name="modelo">
+			<option value="">Seleccionar modelo</option>
+			<option value="touring">Naked</option>
+			<option value="deportiva">Deportiva</option>
+			<option value="cruiser">Cruiser</option>
+			<option value="touring">Touring</option>
+			<option value="touring">Enduro</option>
+			<option value="touring">Cross</option>
+		</select>
+
+		<label for="cilindrada">Cilindrada:</label>
+		<input type="text" id="cilindrada" name="cilindrada" placeholder="Ej. 1000cc" required>
+
+        <label for="cilindrada">Nombre de la motocicleta:</label>
+        <input type="text" id="nombreMoto" name="moto" placeholder="Ingrese el nombre del producto / EJ: Kawasaki z1000" required> 
+		<input type="submit" value="Enviar">
+	</form>
+	<br>
+	<div class="btn-vender">
+			<ul>
+				<center><li><a  style="color: rgb(196, 160, 232);"href="/vender.html">¡Compra y vende con nosotros!</a></li></center>
+			</ul>
+	</div>
+
+<br><br><br>
+<hr>
+<br><br><br>
+    <footer class="footer container">
+
+        <div class="link">
+
+            <h3>algo</h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium natus repudiandae alias placeat assumenda atque quo aliquid id fuga vel incidunt asperiores debitis ipsa, cum iusto. Accusamus aut commodi dolorem!</p>
+
+        </div>
+
+</footer>
+</body>
+</html>
