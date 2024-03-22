@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Histograma Calificaciones</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div style="width: 50%;">
+    <canvas id="histogramaCalif"></canvas>
+  </div>
+
+  <script>
+    // Datos
+    var calificaciones = [9, 14, 12, 8, 14, 12, 16, 16, 8, 14, 11, 12, 12, 11, 11, 18, 14, 18, 15, 15];
+
+    // Histograma
+    new Chart("histogramaCalif", {
+      type: 'bar',
+      data: {
+        labels: calificaciones,
+        datasets: [{
+          data: calificaciones,
+          backgroundColor: Array(calificaciones.length).fill('green')
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        title: {
+          display: true, 
+          text: 'Histograma de Calificaciones'
+        },
+        scales: {
+          x: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
