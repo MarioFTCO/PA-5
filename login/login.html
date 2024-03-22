@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="icon" type="image/png" href="/imagenes/image.png">
+    <link rel="stylesheet" href="loginstyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="blur-container">
+            <div class="login-container">
+                <h2>Inicio de Sesión</h2>
+                <form id="loginForm">
+                    <input type="text" placeholder="Usuario" id="loginUsername" required>
+                    <input type="password" placeholder="Contraseña" id="loginPassword" required>
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+                <p>¿No tienes una cuenta? <a href="#" id="signupLink">Crear Cuenta</a></p>
+            </div>
+            <div class="signup-container" style="display: none;">
+                <h2>Crear Cuenta</h2>
+                <form id="signupForm">
+                    <input type="text" placeholder="Nombre" id="signupName" required>
+                    <input type="email" placeholder="Correo Electrónico" id="signupEmail" required>
+                    <input type="password" placeholder="Contraseña" id="signupPassword" required>
+                    <button type="submit">Crear Cuenta</button>
+                </form>
+                <p>¿Ya tienes una cuenta? <a href="#" id="loginLink">Iniciar Sesión</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="loginscript.js"></script>
+</body>
+</html>
